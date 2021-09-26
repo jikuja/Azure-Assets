@@ -148,6 +148,9 @@ if (!$WhatIf) {
         200 {
             Write-Host "Success"
         }
+        201 {
+            Write-Host "Success"
+        }
         409 { if ($body.error.code -eq "RoleAssignmentExists") {
                 Write-Host "Success: assignment already exists"
             } else {
